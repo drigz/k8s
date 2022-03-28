@@ -285,7 +285,7 @@ deployment:
   automountServiceAccountToken: true
 
   # -- If you want to add extra init containers.
-  extraInitContainers: {}
+  extraInitContainers: ""
   # extraInitContainers: |
   #  - name: ...
   #    image: ...
@@ -314,7 +314,7 @@ job:
   # extraInitContainers: |
   #  - name: ...
   #    image: ...
-  extraInitContainers: {}
+  extraInitContainers: ""
 
   # -- If you want to add lifecycle hooks. 
   lifecycle: {}

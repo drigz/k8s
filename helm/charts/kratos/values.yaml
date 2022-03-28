@@ -210,8 +210,10 @@ deployment:
   #     mountPath: "/etc/postgresql-tls"
   #     readOnly: true
 
-  # -- If you want to add extra init containers. These are processed before the migration init container.
-  extraInitContainers: {}
+  # -- If you want to add extra init containers. These are processed before
+  # starting the main containers (kratos, kratos-courier, and
+  # kratos-automigrate).
+  extraInitContainers: ""
   # extraInitContainers: |
   #  - name: ...
   #    image: ...

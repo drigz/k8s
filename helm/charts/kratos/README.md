@@ -15,7 +15,7 @@ A ORY Kratos Helm chart for Kubernetes
 | deployment.extraArgs | list | `[]` | Array of extra argumetns to be passed down to the deployment. Kubernetes args format is expected - --foo - --sqa-opt-out |
 | deployment.extraContainers | object | `{}` | If you want to add extra sidecar containers.  |
 | deployment.extraEnv | list | `[]` | Array of extra envs to be passed to the deployment. Kubernetes format is expected - name: FOO   value: BAR |
-| deployment.extraInitContainers | object | `{}` |  |
+| deployment.extraInitContainers | string | `""` | If you want to add extra init containers. These are processed before starting the main containers (kratos, kratos-courier, and kratos-automigrate). |
 | deployment.extraVolumeMounts | list | `[]` |  |
 | deployment.extraVolumes | list | `[]` | If you want to mount external volume For example, mount a secret containing Certificate root CA to verify database TLS connection. |
 | deployment.labels | object | `{}` |  |
